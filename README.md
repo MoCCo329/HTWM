@@ -42,9 +42,7 @@ Device : Raspberry PI, Jetson NANO, 4 vibration sensor, 3 cameras, OpenCV
 
 - 원하는 운동 루틴을 만들고 기기에서 레퍼런스 영상을 보며 운동 가능하다. 운동 종류별로 자세에 맞게 카운트를 하여 운동기록을 관리한다.
 
-
-
-![Screenshot_20221120-204917_Expo_Go](README.assets/Screenshot_20221120-204917_Expo_Go.webp)<img src="README.assets/image-20230504203323976.webp" alt="image-20230504203323976" style="zoom:50%;" />
+<img src="README.assets/Gif_b8aa37b7-4d04-40c3-89bd-827f6519daf9.webp" alt="Gif_b8aa37b7-4d04-40c3-89bd-827f6519daf9" style="zoom:67%;" />
 
 <img src="README.assets/1683193635067.webp" alt="1683193635067" style="zoom: 67%;" />
 
@@ -55,7 +53,7 @@ Device : Raspberry PI, Jetson NANO, 4 vibration sensor, 3 cameras, OpenCV
 
 <img src="README.assets/image-20230505001356175.webp" alt="image-20230505001356175" style="zoom: 50%;" />
 
-<img src="README.assets/Gif_25518b4c-0332-4231-acb9-e2404e0246e2.webp" alt="Gif_25518b4c-0332-4231-acb9-e2404e0246e2" style="zoom:33%;" />
+<img src="README.assets/Gif_cbbee0bf-95d7-42b4-a907-770eb64e4f90.webp" alt="Gif_cbbee0bf-95d7-42b4-a907-770eb64e4f90" style="zoom:67%;" />
 
 ### 3. 오운완(오늘 운동 완료) 사진촬영
 
@@ -107,7 +105,7 @@ Device : Raspberry PI, Jetson NANO, 4 vibration sensor, 3 cameras, OpenCV
 
 - 아키텍처
 
-![스크린샷 2023-05-04 204213](README.assets/스크린샷 2023-05-04 204213.webp)
+![스크린샷_2023-05-04_204213](README.assets/스크린샷_2023-05-04_204213.webp)
 
 ### 2. ETC
 
