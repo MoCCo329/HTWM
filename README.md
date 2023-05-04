@@ -1,33 +1,121 @@
-# 홈트윗미
+# HTWM(22/10/11~22/12/25)
+
+<br>
 
 ## 서비스 소개
-> Home Training With Mirror
- - 집에서 간단하게 할 수 있는 개인 PT 서비스
- - 거울속에 내 모습을 보면서 자세교정
- - 실시간 영상통화로 친구 or 트레이너 선생님과 함께 운동
- - 어플리케이션으로 친구추가, 나의 운동 기록 확인
- - [어플리케이션 다운로드](https://expo.dev/artifacts/6dae5604-a671-461d-a206-f70bb8e2cc4b)
 
-## 팀원 소개 및 역할
-<table>
-  <tbody>
-    <tr>
-      <td align="center"><a href="https://lab.ssafy.com/rawoon"><img src="https://secure.gravatar.com/avatar/417bd0eface5f6ca1ad2836aaf80629d?s=80&d=identicon" width="100px;" alt=""/><br /><sub><b>김보경 : 팀장, App front, 발표</b></sub></a><br /></td>
-      <td align="center"><a href="https://lab.ssafy.com/kd8317"><img src="https://lab.ssafy.com/uploads/-/system/user/avatar/5001/avatar.png?width=40" width="100px;" alt=""/><br /><sub><b>김도현 : Web front</b></sub></a><br /></td>
-      <td align="center"><a href="https://lab.ssafy.com/xofkdqkqh"><img src="https://lab.ssafy.com/uploads/-/system/user/avatar/5212/avatar.png?width=40" width="100px;" alt=""/><br /><sub><b>김준수 : App front, 인프라</b></sub></a><br /></td>
-     <tr/>
-      <td align="center"><a href="https://lab.ssafy.com/dbgusdn98"><img src="https://secure.gravatar.com/avatar/5745bce8fc14f21a71c1e609c997ddfe?s=80&d=identicon" width="100px;" alt=""/><br /><sub><b>유현우 : 자세인식 알고리즘</b></sub></a><br /></td>
-      <td align="center"><a href="https://lab.ssafy.com/sosyho"><img src="https://secure.gravatar.com/avatar/6fbb02c4f5a0005f43148a2c29446403?s=80&d=identicon" width="100px;" alt=""/><br /><sub><b>윤희욱 : 센서 제어</b></sub></a><br /></td>
-      <td align="center"><a href="https://lab.ssafy.com/asdfmelody"><img src="https://lab.ssafy.com/uploads/-/system/user/avatar/5155/avatar.png?width=40" width="100px;" alt=""/><br /><sub><b>최희선 : UCC 제작, Back, 자세인식 알고리즘</b></sub></a><br /></td>
-    </tr>
-  </tbody>
-</table>
+> Home Traning With Mirror
+
+- 거울을 활용해 홈트레이닝 하기
+- 홈트와 관련된 여러 기능이 있는 스마트 미러와 앱
+
+<br>
+
+## 팀원 소개 및 담당 역할
+
+- 김보경 (팀장) : App FrontEnd, 발표
+- 김도현 (팀원) : Device FrontEnd
+- 김준수 (팀원) : BackEnd, App FrontEnd
+- 유현우 (팀원) : 자세인식 알고리즘
+- 윤희욱 (팀원) : Device 센서 제어
+- 최희선 (팀원) : BackEnd, 자세인식 알고리즘, UCC 제작
+
+<br>
 
 ## 기술스택
- ### FE : <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=black"><img src="https://img.shields.io/badge/Css-1572B6?style=for-the-badge&logo=Css&logoColor=white"><img src="https://img.shields.io/badge/Typescript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white"><img src="https://img.shields.io/badge/React Native-61DAFB?style=for-the-badge&logo=React&logoColor=black"><img src="https://img.shields.io/badge/Electron-47848F?style=for-the-badge&logo=Electron&logoColor=white"><img src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=Redux&logoColor=white">
-### BE : <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=Spring Boot&logoColor=white">
-### DB : <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white">
-### EMB : <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white">
 
- ## ETC
- - [WIKI](https://lab.ssafy.com/s07-final/S07P31A306/-/wikis/home)
+APP FE : React Native, Typescript
+
+Device FE : Electron, React, Redux
+
+BE : Spring Boot, MySQL
+
+Infra : Jenkins, AWS EC2, S3, NginX
+
+Device : Raspberry PI, Jetson NANO, 4 vibration sensor, 3 cameras, OpenCV
+
+<br>
+
+## 서비스
+
+### 1. 앱에서 운동 루틴 관리 및 기기에서 실행
+
+- 원하는 운동 루틴을 만들고 기기에서 레퍼런스 영상을 보며 운동 가능하다. 운동 종류별로 자세에 맞게 카운트를 하여 운동기록을 관리한다.
+
+
+
+![Screenshot_20221120-204917_Expo_Go](README.assets/Screenshot_20221120-204917_Expo_Go.webp)<img src="README.assets/image-20230504203323976.webp" alt="image-20230504203323976" style="zoom:50%;" />
+
+<img src="README.assets/1683193635067.webp" alt="1683193635067" style="zoom: 67%;" />
+
+### 2. 화상 PT
+
+- 집에서 화상으로 트레이너 혹은 친구와 PT 를 진행할 수 있다.
+- 앱에서 친구에게 통화를 걸고 상대방이 받으면 기기간 연결이 시작된다.
+
+<img src="README.assets/image-20230505001356175.webp" alt="image-20230505001356175" style="zoom: 50%;" />
+
+<img src="README.assets/Gif_25518b4c-0332-4231-acb9-e2404e0246e2.webp" alt="Gif_25518b4c-0332-4231-acb9-e2404e0246e2" style="zoom:33%;" />
+
+### 3. 오운완(오늘 운동 완료) 사진촬영
+
+- 매일 내 모습을 기록하기 위한 사진촬영 기능
+- 앱에서 사진을 확인하고 관리할 수 있다.
+
+<img src="README.assets/2.webp" alt="2" style="zoom: 67%;" /><img src="README.assets/Screenshot_20221120-205211_Expo_Go.webp" alt="Screenshot_20221120-205211_Expo_Go" style="zoom:67%;" />
+
+### 4. 음성인식 기기제어, 및 진동감지센서
+
+- "안녕 트윗" 키워드를 통해 음성인식을 실행시키고 운동 시작/종료, 사진촬영 시작, 화상통화 종료 등을 제어 가능하다.
+- 진동센서가 있어 거울을 세번 노크하여 사진촬영을 바로 할 수 있다.d
+
+<img src="README.assets/5.webp" alt="5" style="zoom:67%;" />
+
+<img src="README.assets/4.webp" alt="4" style="zoom:63%;" />
+
+<br>
+
+## DEATIL
+
+### 1. Planning & Desing
+
+- 기능적 요구 사항 정리
+
+![기능명세_1](README.assets/기능명세_1.webp)
+
+![기능명세_2](README.assets/기능명세_2.webp)
+
+- 와이어 프레임(앱, 디바이스)
+
+![앱](README.assets/앱-16832143089841.webp)
+
+![웹](README.assets/웹.webp)
+
+- DB Schema - ERD
+
+![erd](README.assets/erd.webp)
+
+- API
+
+![image-20230505003804312](README.assets/image-20230505003804312.webp)
+
+![image-20230505003847005](README.assets/image-20230505003847005.webp)
+
+![image-20230505003933645](README.assets/image-20230505003933645.webp)
+
+![image-20230505004425820](README.assets/image-20230505004425820.webp)
+
+- 아키텍처
+
+![스크린샷 2023-05-04 204213](README.assets/스크린샷 2023-05-04 204213.webp)
+
+### 2. ETC
+
+<img src="README.assets/20221114_153809.webp" alt="20221114_153809" style="zoom:50%;" />
+
+<img src="README.assets/20221117_155856.webp" alt="20221117_155856" style="zoom:50%;" />
+
+<img src="README.assets/1678607111597.webp" alt="1678607111597" style="zoom:50%;" />
+
+<img src="README.assets/20221118_110845.webp" alt="20221118_110845" style="zoom:50%;" />
+
